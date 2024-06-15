@@ -18,12 +18,12 @@ DOCKERFILE:
 docker build -t nome-escolhido caminho-dockerfile (pode ser .)
 
 comandinho da agua benta (by andrey blum):
-docker kill $(docker ps -q)  true && docker rm $(docker ps -aq)  true && docker rmi $(docker images -q) -f && docker volume prune -y && docker network prune -y
+`docker kill $(docker ps -q)  true && docker rm $(docker ps -aq)  true && docker rmi $(docker images -q) -f && docker volume prune -y && docker network prune -y`
 
 comandinho agua benta versão Windows:
-docker kill $(docker ps -q)  true | docker rm $(docker ps -aq)  true | docker rmi $(docker images -q) -f | docker volume prune | docker network prune
+`docker kill $(docker ps -q)  true | docker rm $(docker ps -aq)  true | docker rmi $(docker images -q) -f | docker volume prune | docker network prune`
 
 comandinho agua benta plus v2.0 xrl8 turbo
-docker kill docker ps -q && docker rm docker ps -aq && docker rmi docker images -q -f  true && docker network prune -f  true && docker system prune -af || docker volume ls --format json | jq -r '.Name' | xargs docker volume rm
+`docker kill docker ps -q && docker rm docker ps -aq && docker rmi docker images -q -f  true && docker network prune -f  true && docker system prune -af || docker volume ls --format json | jq -r '.Name' | xargs docker volume rm`
 
 https://docs.docker.com/reference/dockerfile/
