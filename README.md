@@ -1,18 +1,17 @@
 # comandos do Docker
 
-docker pull  -> pega uma imagem da internet
-docker build -> cria uma imagem a partir de um arq
-docker run   -> roda a imagem em um container
-docker image
-docker run -it python /bin/bash -> inicia
+`docker pull`  -> pega uma imagem da internet
+`docker build` -> cria uma imagem a partir de um arq
+`docker run`   -> roda a imagem em um container
+`docker image`
+`docker run -it python /bin/bash` -> inicia
 
-docker exec -it dbd336ab2dab /bin/bash  -> "Entrar no container"
+`docker exec -it dbd336ab2dab /bin/bash`  -> "Entrar no container"
 
-docker image rm id-da-imagem -> matar imagem 
-docker container rm id-do-container -> matar o container
+`docker image rm id-da-imagem` -> matar imagem 
+`docker container rm id-do-container` -> matar o container
 
-SE O CONTAINER ESTIVER PAUSADO:
-docker start (cartas falou de cabessa)
+O CONTAINER PODE FICAR PAUSADO!
 
 DOCKERFILE:
 docker build -t nome-escolhido caminho-dockerfile (pode ser .)
